@@ -2,6 +2,8 @@ import './App.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import HomePage from './pages/HomePage'
 import LoginPage from './pages/LoginPage'
+import RegisterPage from './pages/RegisterPage'
+import UserListPage from './pages/userListPage'
 
 // Composant principal de l'application.
 // Il configure le système de navigation et déclare les routes disponibles.
@@ -15,6 +17,8 @@ function App() {
         {/* Une route correspond à une URL et à son composant associé. */}
         <Route path='/home' element={<HomePage />} />
         <Route path='/login' element={<LoginPage />} />
+        <Route path='/register' element={<RegisterPage />} />
+        <Route path='/userList' element={<UserListPage />} />
        </Routes>
       </BrowserRouter>
     </>
